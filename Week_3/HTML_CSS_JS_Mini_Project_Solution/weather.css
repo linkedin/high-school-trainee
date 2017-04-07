@@ -1,6 +1,5 @@
-input[type=text], select {
-	height:42px;
-	width:200px;
+#city_selector {
+	width: 200px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -9,8 +8,11 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-input[type=submit] {
-    height: 42px;
+#city_selector:hover {
+    background-color: #45a049;
+}
+
+#submit_btn {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -20,16 +22,13 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+.container {
+	text-align: center;
+	height: 200px;
+	width: 500px;
+	margin: auto;
 }
 
-.container{
-	text-align: center;
-	height:200;
-	width:500;
-	margin:auto;
-}
-.weather{
+.weather {
     text-align: left;
 }

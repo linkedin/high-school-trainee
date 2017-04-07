@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <form id="my-form">
+            <fieldset>
+               <label>City </label>
+               <select id="city_selector">
+                	<option value="Sunnyvale, CA">Sunnyvale, CA</option>
+                	<option value="Boston, MA">Boston, MA</option>
+                	<option value="Honolulu, HI">Honolulu, HI</option>
+                	<option value="Austin, TX">Austin, TX</option>
+                	<option value="San Francisco, CA">San Francisco, CA</option>
+                </select>
+                <input type="submit" id="submit_btn" value="Get Weather"/>
+            </fieldset>
+        </form>
+        <div class="weather">
+            <p>Where: <span id="description"></span></p>
+            <p>Temp (F): <span id="temp"></span></p>
+            <p>Condition: <span id="condition"></span></p>
+        </div>
+    </div>
+</body>
+</html>
