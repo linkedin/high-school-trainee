@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/static/js/main.js"></script>
+    </head>
+
+    <title>Cookies!</title>
+    <body>
+        <table>
+            <th>
+                <tr>
+                    <td>Name</td>
+                    <td>Rating</td>
+                </tr>
+            </th>
+            {% for cookie in cookies %}
+            <tr>
+                <td>{{ cookie.name }}</td>
+                <td>{{ cookie.rating }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <div id="add_cookie_form">
+            <form>
+                <fieldset>
+                    <label>Name of cookie<label>: <input type="text" id="cookie_name" name="cookie_name"/>
+                    <label>Rating<label>:
+                    <select name="cookie_rating" id="cookie_rating">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <input id="add_cookie_btn" type="submit" value="Add cookie!"/>
+                </fieldset>
+            </form>
+        </div>
+        <div id="message"></div>
+    </body>
+
+</html>
