@@ -1,0 +1,23 @@
+.links {
+	background-color: white;
+	color: black;
+	border: 2px solid #4691ba;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+.links:hover {
+	background-color: #4691ba;
+	color: white;
+}
+
+#my-image {
+	width: 304px;
+	height: auto;
+	padding: 20px;
+	vertical-align: top;
+}
