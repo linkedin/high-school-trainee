@@ -1,0 +1,9 @@
+td {
+    padding: 5px;
+}
+
+#add_cookie_form {
+    background: silver;
+    padding: 5px;
+    width: 40%;
+}
