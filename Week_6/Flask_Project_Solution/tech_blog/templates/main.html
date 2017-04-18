@@ -1,0 +1,21 @@
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="/static/js/main.js"></script>
+    </head>
+
+    <title>My tech blog!</title>
+
+    {?posts}
+        {% for post in posts %}
+            <div class="blog_post">
+                <p>{{ post.content }}</p>
+            </div>
+        {% endfor %}
+    {?else}
+        <div class="empty_blog">You have no blog posts yet!</div>
+    {/posts}
+</html>
