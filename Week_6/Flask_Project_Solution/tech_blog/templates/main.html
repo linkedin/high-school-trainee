@@ -1,21 +1,29 @@
-
 <!doctype html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="/static/js/main.js"></script>
+        <script type="text/javascript" src="/static/js/main.js"></script>
+        <title>My tech blog!</title>
     </head>
-
-    <title>My tech blog!</title>
+    <body>
+        <h1>POST A BLOG ENTRY</h1>
+        <div id="message"> </div>
+        <form>
+            <input type="text" id="blog_content" name="blog_content"/>
+            <input id="add_post" type="submit" value="Post"/>
+        </form>
 
     {% if posts %}
+        <table class="blog_post" id="post_content">
         {% for post in posts %}
-            <div class="blog_post">
-                <p>{{ post.content }}</p>
-            </div>
+            <tr>
+                <td id="new_content">{{ post.content }}</td>
+            </tr>
         {% endfor %}
+        </table>
     {% else %}
         <div class="empty_blog">You have no blog posts yet!</div>
     {% endif %}
+    </body>
 </html>
