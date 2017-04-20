@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -22,6 +22,19 @@ def list_blog_posts():
     posts = BlogPost.query.all()
     return render_template('main.html', posts=posts)
 
+@app.route('/post/<int:id>', methods=['GET', 'PUT', 'DELETE'])
+def modify_blog_posts(id):
+    post = BlogPost.query.get(id)
+    if not post:
+        return jsonify({"message": "No blog post found with id " + str(id)}), 404
+    if request.method == 'GET':
+        return post
+    elif request.method == 'PUT':
+        pass
+    else:
+        db.session.delete(post)
+        db.session.commit()
+        return jsonify({"message": "Success!"}), 200
 
 if __name__ == '__main__':
    app.run(debug=True)

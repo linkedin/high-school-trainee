@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#add_cookie_btn").click(function(e) {
-        if (e.preventDefault) e.preventDefault();
+        e.preventDefault();
 
         var cookie_name = $("#cookie_name").val();
         var cookie_rating = $("#cookie_rating").val();

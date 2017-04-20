@@ -1,4 +1,4 @@
-from flask import json, Flask, render_template, request
+from flask import jsonify, Flask, render_template, request
 app = Flask(__name__)                                   # we create an instance of the Flask class with our module name 
 app.secret_key = "secret key"                           # for encrypting sessions; don't worry about this for now
 
@@ -15,7 +15,7 @@ def list_cookies():                                     # we name the function l
 def add_cookie():
     data = request.form                                 # get the request body
     print(data)
-    return json.dumps('{"message": "success!"}')
+    return jsonify({"message": "success!"}), 200
     
 if __name__ == '__main__':                              # check if we're running the "main" function
    app.run(debug=True)                                  # run on debug mode (this allows for hot reload)

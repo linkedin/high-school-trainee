@@ -8,14 +8,22 @@
     </head>
 
     <title>My tech blog!</title>
-
-    {% if posts %}
-        {% for post in posts %}
-            <div class="blog_post">
-                <p>{{ post.content }}</p>
-            </div>
-        {% endfor %}
-    {% else %}
-        <div class="empty_blog">You have no blog posts yet!</div>
-    {% endif %}
+    <body>
+        <div id="notification"></div>
+        <div class="container">
+            {% if posts %}
+                {% for post in posts %}
+                    <div id="blog_{{ post.id }}" class="blog_post">
+                        <span class="actions">
+                            <a class="edit"><img src="../static/images/pencil.png" alt="Edit" style="width:60px;height:60px;"></a>
+                            <a class="delete"><img src="../static/images/trash.png" alt="Delete" style="width:60px;height:60px;"></a>
+                        </span>
+                        <p>{{ post.content }}</p>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty_blog">You have no blog posts yet!</div>
+            {% endif %}
+        </div>
+    </body>
 </html>

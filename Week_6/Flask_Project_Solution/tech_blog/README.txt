@@ -5,9 +5,7 @@ Inside the tech_blog directory, run these following commands to set up the virtu
 1) sudo pip install virtualenv
 2) virtualenv venv
 3) . venv/bin/activate
-4) sudo pip install Flask
-5) sudo pip install flask_sqlalchemy
-6) sudo pip install pymysql
+4) pip install -r requirements.txt
 
 You will only need to run the above commands once. From now on, to use the app, simply run ". venv/bin/activate" to start up the virtual environment, and then run "python tech_blog.py" to start the app server.
 

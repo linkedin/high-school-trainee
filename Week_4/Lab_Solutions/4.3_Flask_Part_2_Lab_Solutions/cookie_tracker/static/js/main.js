@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#add_cookie_btn").click(function(e) {
-        if (e.preventDefault) e.preventDefault();
+        e.preventDefault();
 
         var cookie_name = $("#cookie_name").val();
         var cookie_rating = $("#cookie_rating").val();
@@ -11,8 +11,8 @@ $(document).ready(function() {
             type: "POST",
             data: data,
             dataType: "json",
-            success: function(status, data) {
-                alert(data);
+            success: function(data, status) {
+                console.log(data);
             }
         });
     });
