@@ -30,9 +30,9 @@ def add_blog_posts():
         post = BlogPost(content=data["blog_content"], username="default")
         db.session.add(post)
         db.session.commit()
-        return jsonify({"message": "success", "id": post.id}), 200
+        return jsonify({"message": "Success!", "id": post.id}), 200
     else:
-        return jsonify({"message": "fail"}), 400
+        return jsonify({"message": "Content length was not within the allowed limits"}), 400
 
 @app.route('/home/')
 def list_blog_posts():
@@ -51,7 +51,11 @@ def modify_blog_posts(id):
     if request.method == 'GET':
         return post
     elif request.method == 'PUT':
-        pass
+        data = request.form
+        post.content = data["blog_content"]
+        db.session.add(post)
+        db.session.commit()
+        return jsonify({"message": "Success!"}), 200
     else:
         db.session.delete(post)
         db.session.commit()
