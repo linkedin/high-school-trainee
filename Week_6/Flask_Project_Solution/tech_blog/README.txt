@@ -7,7 +7,8 @@ Inside the tech_blog directory, run these following commands to set up the virtu
 3) . venv/bin/activate
 4) pip install -r requirements.txt
 
-You will only need to run the above commands once. From now on, to use the app, simply run ". venv/bin/activate" to start up the virtual environment, and then run "python tech_blog.py" to start the app server.
+You will only need to run the above commands once. From now on, to use the app, simply run ". venv/bin/activate" to start up the virtual environment, and then run "python tech_blog.py" to start the app server. Step 4 takes care of installing all necessary libraries into
+the virtual environment, and allows for version control of what libraries to use.
 
 ===== DATABASE SETUP =====
 
