@@ -44,7 +44,7 @@ def list_blog_posts():
 @app.route('/post/<int:id>', methods=['GET', 'PUT', 'DELETE'])
 def modify_blog_posts(id):
     """ RESTful routes for fetching, updating, or deleting a specific blog post """
-    
+ 
     post = BlogPost.query.get(id)
     if not post:
         return jsonify({"message": "No blog post found with id " + str(id)}), 404

@@ -15,10 +15,10 @@
         </form>
 
     {% if posts %}
-        <table id="post_content">
+        <table id="blog_post_table">
         {% for post in posts %}
             <tr id="blog_{{ post.id }}" class="blog_post">
-                <td>{{ post.content }}</td>
+                <td class="post_content">{{ post.content }}</td>
                 <td class="actions hidden">
                     <a class="edit"><img src="../static/images/pencil.png" alt="Edit" style="width:60px;height:60px;"></a>
                     <a class="delete"><img src="../static/images/trash.png" alt="Delete" style="width:60px;height:60px;"></a>

@@ -21,7 +21,7 @@ $(document).ready(function() {
             dataType: "json",
             success: function(result) {
                 var blog_id = result["id"];
-                $("#post_content").prepend('<tr id="blog_' + blog_id + '" class="blog_post"><td>' + post + '</td></tr>');
+                $("#blog_post_table").prepend('<tr id="blog_' + blog_id + '" class="blog_post"><td>' + post + '</td></tr>');
                 $("#notification").css("color", "green");
                 $("#notification").text("Successfully added a new entry!");
             },
@@ -34,7 +34,20 @@ $(document).ready(function() {
 
     $(".edit").click(function(e) {
         var blog_id = $(this).closest(".blog_post").attr('id').split("_")[1];
-        // TODO
+        var post_content_elm = $(this).closest(".post_content");
+        var post_content = $(post_content_elm).val();
+        var htmlString = '<form>';
+        htmlString += '<input type="hidden" name="blog_id" value="' + blog_id + '"/>';
+        htmlString += '<textarea name="blog_content" rows="4" cols="50">' + post_content + '</textarea>';
+        htmlString += '<input id="edit_post" type="submit" value="Save"/>';
+        htmlString += '</form>';
+        $(post_content_elm).html(htmlString);
+    });
+
+    $("#edit_post").click(function(e) {
+        e.preventDefault();
+
+        alert("here");
     });
 
     $(".delete").click(function(e) {
