@@ -7,10 +7,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/tech_bl
 db = SQLAlchemy(app)
 
 
-'''
-    BlogPost model representing a blog post.
-'''
 class BlogPost(db.Model):
+    """ BlogPost model representing a blog post. """
+
     id = db.Column(db.Integer, primary_key=True, nullable=False, autoincrement=True)
     username = db.Column(db.String(15), nullable=False)
     created = db.Column(db.DateTime)
@@ -21,11 +20,11 @@ class BlogPost(db.Model):
         self.username = username
         self.content = content
 
-'''
-    RESTful route for creating a blog post
-'''
+
 @app.route('/post', methods=['POST'])
 def add_blog_posts():
+    """ RESTful route for creating a blog post """
+
     data = request.form
     if 1 <= len(data["blog_content"]) < 1000:
         post = BlogPost(content=data["blog_content"], username="default")
@@ -35,19 +34,17 @@ def add_blog_posts():
     else:
         return jsonify({"message": "fail"}), 400
 
-'''
-    Route for rendering a template listing all existing blog posts
-'''
 @app.route('/home/')
 def list_blog_posts():
+    """ Route for rendering a template listing all existing blog posts """
+
     posts = BlogPost.query.order_by(BlogPost.id.desc())
     return render_template('main.html', posts=posts)
 
-'''
-    RESTful routes for fetching, updating, or deleting a specific blog post
-'''
 @app.route('/post/<int:id>', methods=['GET', 'PUT', 'DELETE'])
 def modify_blog_posts(id):
+    """ RESTful routes for fetching, updating, or deleting a specific blog post """
+    
     post = BlogPost.query.get(id)
     if not post:
         return jsonify({"message": "No blog post found with id " + str(id)}), 404
