@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, Response, json
+from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -25,19 +25,16 @@ def list_blog_posts():
     return render_template('main.html', posts=posts)
 
 
-@app.route('/add', methods=['POST'])
+@app.route('/post', methods=['POST'])
 def add_blog_posts():
     data = request.form
-    if data["blog_content"] != "":
+    if 1 <= len(data["blog_content"]) < 1000:
         post = BlogPost(content=data["blog_content"], username="default")
         db.session.add(post)
         db.session.commit()
-        js = json.dumps('{"message":"success"}')
-        return Response(js, status=200, mimetype='application/json')
+        return jsonify({"message": "success"}), 200
     else:
-        js = json.dumps('{"message": "failed"}')
-        return Response(js, status=400, mimetype='application/json')
-
+        return jsonify({"message": "fail"}), 400
 
 
 if __name__ == '__main__':
