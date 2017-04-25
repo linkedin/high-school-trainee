@@ -8,26 +8,26 @@
     </head>
     <body>
         <h1>POST A BLOG ENTRY</h1>
-        <div id="notification"></div>
+        <div id="notification" class="notification"></div>
         <form>
-            <input type="text" id="blog_content" name="blog_content"/>
-            <input id="add_post" type="submit" value="Post"/>
+            <textarea id="blog-content" name="blog-content"></textarea>
+            <input type="submit" id="add-post" value="Post"/>
         </form>
 
     {% if posts %}
-        <table id="blog_post_table">
+        <div id="blog-post-list">
         {% for post in posts %}
-            <tr id="blog_{{ post.id }}" class="blog_post">
-                <td class="post_content">{{ post.content }}</td>
-                <td class="actions hidden">
-                    <a class="edit"><img src="../static/images/pencil.png" alt="Edit" style="width:60px;height:60px;"></a>
-                    <a class="delete"><img src="../static/images/trash.png" alt="Delete" style="width:60px;height:60px;"></a>
-                </td>
-            </tr>
+            <div id="blog-{{ post.id }}" class="blog-post">
+                <div class="actions hidden">
+                    <a class="edit"><img src="../static/images/pencil.png" alt="Edit"></a>
+                    <a class="delete"><img src="../static/images/trash.png" alt="Delete"></a>
+                </div>
+                <div class="post-content">{{ post.content }}</div>
+            </div>
         {% endfor %}
-        </table>
+        </div>
     {% else %}
-        <div class="empty_blog">You have no blog posts yet!</div>
+        <div class="empty-blog">You have no blog posts yet!</div>
     {% endif %}
     </body>
 </html>
