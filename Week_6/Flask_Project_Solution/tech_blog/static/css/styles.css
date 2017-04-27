@@ -1,3 +1,57 @@
+body {
+    background: linear-gradient(to right, #485d69, #98d8f4);
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+    color: #000;
+}
+
+form > * {
+    width: 400px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+
+input[type=submit] {
+    width: 50px;
+}
+
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+.notification {
+    width: 400px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.success {
+    color: #2f7b14;
+}
+
+.error {
+    color: #d11124;
+}
+
+.actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.actions > a > img {
+    width: 20px;
+    height: 20px;
+}
+
+.blog-post {
+    width: 400px;
+    position: relative;
+    min-height: 50px;
+    margin: 50px auto;
+    padding: 35px 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
 }
