@@ -15,7 +15,7 @@ Mentors should review lectures, labs, and lab solutions beforehand in order to e
 ## Bootcamp Structure
 This bootcamp is designed with the expectation that trainees will be available for 4 days each week for 7-8 weeks. Each day is 8 hours long, with the expectation that 1 hour is for lecture and up to 3 hours are for lab. The remaining time in each day is for the trainees to spend working with their mentor.
 
-
+---
 
 Copyright 2017 LinkedIn Corporation
 All Rights Reserved.
