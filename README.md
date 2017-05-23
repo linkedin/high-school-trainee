@@ -22,7 +22,7 @@ Mentors should review lectures, labs, and lab solutions beforehand in order to e
 ### What’s in the Git Repo
 *Note: this curriculum was written to be used with either Mac or Windows 10 computers. Python 2.7 is used in the latter half of the curriculum, but all Python materials covered are Python 3 compatible.*
 
-1. Commands_Cheat_Sheet.docx contains basic UNIX, SVN, and Git commands. These commands are covered in the Terminal lecture and the optional Git/SVN lecture (pick the relevant slides based on what you use). You may want to consider printing out copies for the trainees to keep.
+1. Commands\_Cheat\_Sheet.docx contains basic UNIX, SVN, and Git commands. These commands are covered in the Terminal lecture and the optional Git/SVN lecture (pick the relevant slides based on what you use). You may want to consider printing out copies for the trainees to keep.
 2. Lesson_Plan.docx has a high-level overview of each week’s topics.
 3. The rest of the folders in the repo are each week’s lesson material. In each week’s folder, lesson materials are broken down by days. Each day will have a corresponding lecture, lab, and lab solution. The filename convention is weekNumber.dayNumber_topic_title.pptx
 
