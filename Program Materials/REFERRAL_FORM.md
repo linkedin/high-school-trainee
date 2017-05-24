@@ -2,7 +2,7 @@
 
 The below form is created in Google Forms or similar and shared only with the teachers that can make referrals to the program and the program team.
 
-=========start form=========
+=======form below=======
 
 ##Intro Text:
 LinkedIn High School Trainee Program
@@ -17,14 +17,14 @@ Student can secure transportation to either LinkedIn Sunnyvale or LinkedIn San F
 Student can secure State of California work permit and parent signature and is eligible for employment in the U.S.
 
 ##Questions:
-Name of person filling out form: text
-Email of person filling out form: text
-Affiliation of student: radio buttons with schools listed
-Candidate name: text
-Candidate LinkedIn profile URL: text
-Candidate track: radio buttons with “UI Engineer” or “Apps Engineer”
-Candidate current grade: radio buttons with 9 - freshmen, 10 sophomore, 11 junior
-Candidate email: text
-Candidate phone number: text
+1. Name of person filling out form: text
+2. Email of person filling out form: text
+3. Affiliation of student: radio buttons with schools listed
+4. Candidate name: text
+5. Candidate LinkedIn profile URL: text
+6. Candidate track: radio buttons with “UI Engineer” or “Apps Engineer”
+7. Candidate current grade: radio buttons with 9 - freshmen, 10 sophomore, 11 junior
+8. Candidate email: text
+9. Candidate phone number: text
 
 
