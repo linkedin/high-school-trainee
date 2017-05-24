@@ -4,13 +4,13 @@
 The Summit is a 4-hour program designed to give the Trainees valuable learning that is outside of the technical experience they will receive from other parts of the program.  Topics might include confidence, asking for help, growth mindset, resilience, etc.  The event is generally divided into: 2 hours of facilitated topics, 1 hour for lunch, and close with a 1 hour panel discussion with past Trainees and current LinkedIn employees.Traditionally this event is placed about 2/3 into the Trainees’ 8-weeks (roughly week 5).
 
 ##Logistics:
-⋅⋅* When: Week 5 of 8 - 4 hours with a lunch break
-⋅⋅* Program - 10am-Noon
-⋅⋅* Lunch - Noon-1pm
-⋅⋅* Panel Discussion - 1pm-2pm
-⋅⋅* Where: Moderate-size conf room for intimacy, not a large classroom.
-⋅⋅* Who: Trainees only, with one leader to organize -- intentionally small & intimate.
-⋅⋅* Cost: $X for Executive Coaching
+  * When: Week 5 of 8 - 4 hours with a lunch break
+  * Program - 10am-Noon
+  * Lunch - Noon-1pm
+  * Panel Discussion - 1pm-2pm
+  * Where: Moderate-size conf room for intimacy, not a large classroom.
+  * Who: Trainees only, with one leader to organize -- intentionally small & intimate.
+  * Cost: $X for Executive Coaching
 
 ##Content:
 Coaching Program: Program will be led by executive coache and program team. Proposed program content is below.

@@ -7,9 +7,9 @@ This schedule assumes a fiscal year that runs from January through December and 
 3. January - February: Solicit recommendations from teachers based on budget allocated. Open hiring requisitions with job description.
 4. February - March: Phone screen candidates and issue offer letters. At LinkedIn, the campus recruiting team does this work. Solicit mentor interest.
 5. March: Assemble internal project team with weekly standups. At LinkedIn, we have a central volunteer project team with several sub-teams:
-⋅⋅* Mentor Training
-⋅⋅* Summer Events
-⋅⋅* Onboarding and Evaluation
+  * Mentor Training
+  * Summer Events
+  * Onboarding and Evaluation
 6. April: Select mentors and have mentors introduce themselves to trainees.
 7. May: Train mentors and set the Summer calendar of events and orientation.
 8. June: Welcome High School Trainees.
