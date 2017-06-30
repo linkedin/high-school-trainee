@@ -1,4 +1,4 @@
-#Email Mentor(s) Send to Trainees Prior to Program Start
+# Email Mentor(s) Send to Trainees Prior to Program Start
 
 Hello (Trainee Name),
 

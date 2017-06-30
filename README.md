@@ -1,4 +1,4 @@
-#LinkedIn Women In Tech (WIT) High School Trainee Program
+# LinkedIn Women In Tech (WIT) High School Trainee Program
 
 LinkedIn is proud to present the open source version of our High School Trainee program. The High School Trainee program was born out of the Women in Tech (WIT) initiative at LinkedIn, and was started in 2015 by Sarah Clatterbuck and the Community Task Force within Women in Tech at LinkedIn. The vision of the Community Task Force was to "Inspire the next generation to study computer science and related fields." Today, High School Trainee exists as its own task force within the Women in Tech initiative with the same vision.
 
@@ -8,19 +8,19 @@ This open source project is the outcome of the third year of the program. As Lin
 
 In this repository are two main areas - Program Materials and Technical Bootcamp Curriculum. The Program Materials will guide an outline for how a company can operationalize such a program. The Technical Bootcamp Curriculum provides content by which mentors and students can engage through the duration of the program for technical learning.
 
-##Program Materials
+## Program Materials
 
 Program materials include an annual schedule for planning and executing a High School Trainee program, sample materials for trainee and mentor evaluations, sample materials for trainee events and a program overview and philosophy.
 
-##Technical Bootcamp Curriculum
+## Technical Bootcamp Curriculum
 
 LinkedIn’s Women In Tech is proud to present the new streamlined high school trainee bootcamp curriculum. This bootcamp lasts for seven weeks (with an optional eighth week), and will introduce front-end and back-end development through development of a full-stack Web application.
 
-###Mentor Expectations
+### Mentor Expectations
 
 Mentors should review lectures, labs, and lab solutions beforehand in order to effectively help the trainees with any questions they may have. Mentors can decide if they would like for their trainees to use the Git project to see lab directions and lab solutions, or if they want to withhold the lab solutions and only share the lab directions. It is expected that mentors will dedicate approximately four hours per day, during the duration of the program, to working with the trainees.
 
-###What’s in the Git Repo
+### What’s in the Git Repo
 
 Note: this curriculum was written to be used with either Mac or Windows 10 computers. Python 2.7 is used in the latter half of the curriculum, but all Python materials covered are Python 3 compatible.
 
@@ -29,7 +29,7 @@ Note: this curriculum was written to be used with either Mac or Windows 10 compu
 2. Lesson_Plan.docx has a high-level overview of each week’s topics.
 The rest of the folders in the repo are each week’s lesson material. In each week’s folder, lesson materials are broken down by days. Each day will have a corresponding lecture, lab, and lab solution. The filename convention is weekNumber.dayNumbertopictitle.pptx
 
-###Bootcamp Structure
+### Bootcamp Structure
 
 This bootcamp is designed with the expectation that trainees will be available for four days each week for seven to eight weeks. Each day is eight hours long, with the expectation that one hour is for lecture and up to three hours are for lab. The remaining time in each day is for the trainees to spend working with their mentor on company source code features and bugs.
 

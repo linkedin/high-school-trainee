@@ -1,4 +1,4 @@
-#Annual Schedule for High School Trainee Program
+# Annual Schedule for High School Trainee Program
 
 This schedule assumes a fiscal year that runs from January through December and an academic year that runs from September through June. Adapt as needed for the schedule of the company and nearby school system.
 

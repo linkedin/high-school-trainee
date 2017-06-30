@@ -1,10 +1,10 @@
-#Teacher Referral Form
+# Teacher Referral Form
 
 The below form is created in Google Forms or similar and shared only with the teachers that can make referrals to the program and the program team.
 
 =========start form=========
 
-##Intro Text:
+## Intro Text:
 <Company X> High School Trainee Program
 
 Please fill out the below form to register your pre-approved candidates in the program. Program criteria as follows:
@@ -17,7 +17,7 @@ Please fill out the below form to register your pre-approved candidates in the p
 6. Student can secure transportation to <Company X> office location.
 7. Student can secure State of California work permit for minors and parent signature, and is eligible for employment in the U.S.
 
-##Questions:
+## Questions:
 1. Name of person filling out form: text
 2. Email of person filling out form: text
 3. Affiliation of student: radio buttons with schools listed

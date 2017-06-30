@@ -1,10 +1,10 @@
-#High School Trainee Post-Survey
+# High School Trainee Post-Survey
 
 The below form is created in Google Forms or similar and sent to the High School Trainees in the last week of their program.
 
 ========form below=========
 
-##High School Trainee Program Survey
+## High School Trainee Program Survey
 
 1. How likely are you to recommend the trainee program to a friend? range 0-10 “Not at all likely” “Very likely”
 2. Are you planning to declare a STEM (science, technology, engineering, math) major when you go to college? Radio buttons -  yes, no
