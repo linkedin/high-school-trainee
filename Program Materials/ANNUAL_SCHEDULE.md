@@ -11,8 +11,11 @@ This schedule assumes a fiscal year that runs from January through December and 
 **February - March:** Phone screen candidates and issue offer letters. Solicit mentor interest.
 
 **March:** Assemble internal project team with weekly standups. The recommended structure is a central volunteer project team with several sub-teams:
+
 1. Mentor Training: Responsible for matching mentors and trainees, performing HR/compliance training for mentors, and walking mentors through the curriculum.
+
 2. Summer Events: Responsible for scheduling orientation, team building, mid-Summer summit and “show and tell” event to close the season.
+
 3. Onboarding and Evaluation: Responsible for verification of eligibility for employment, offer generation, establishing communication channels, orientation schedule and materials for the trainees, and surveying trainees and mentors.
 
 **April:** Select mentors and have mentors introduce themselves to trainees.
