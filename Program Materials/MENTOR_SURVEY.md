@@ -12,8 +12,6 @@ Thank you for hosting a trainee this past summer! In the spirit of being open, h
 
 1. Name: text
 2. Team: text
-3. How likely are you to recommend mentoring in the trainee program to a friend?: range 0-10 - “Not at all likely” “Very likely”
-
 
 ###Agree?
 
