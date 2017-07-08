@@ -1,9 +1,12 @@
-
 $(document).ready(function(){
     $("#my-form").submit(function(e) {
-        if (e.preventDefault) e.preventDefault();
+        // IE versions 8 and earlier do not support preventDefault
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+
         var data = $("#color").val();
-        if(data == "") {
+        if (data === "") {
             alert("You didn't provide any input!");
         } else {
             console.log({"favoriteColor": data});

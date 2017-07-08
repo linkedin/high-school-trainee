@@ -1,8 +1,12 @@
 window.onload = function() {
     function processForm(e) {
-        if (e.preventDefault) e.preventDefault();
+        // IE versions 8 and earlier do not support preventDefault
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+
         var data = document.getElementById("color").value;
-        if(data == "") {
+        if (data === "") {
             alert("You didn't provide any input!");
         } else {
             console.log({"favoriteColor": data});
@@ -10,6 +14,6 @@ window.onload = function() {
         return false;
     }
 
-    var form = document.getElementById('my-form');
+    var form = document.getElementById("my-form");
     form.addEventListener("submit", processForm);
 }
